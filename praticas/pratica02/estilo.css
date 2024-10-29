@@ -1,0 +1,213 @@
+* {
+    /* limpa os espaçamentos externos e internos dentro de todos os elementos HTML e faz o tamanho total do elemento permanecer consistente */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* fonte específica */
+    line-height: 1.6; /* espaçamento do texto */
+    background-color: #f4f4f4; /* cor de fundo */
+    color: #333; /* cor do texto */
+    display: flex; /*  */
+    flex-direction: column; /* distribui os elementos em coluna */
+    justify-content: center; /* centraliza horizontalmente */
+    height: 100vh; /* garante que ocupe toda a altura do navegador */
+}
+
+header {
+    background-color: #4CAF50; /* cor de fundo */
+    color: white; /* cor do texto */
+    padding: 16px; /* adiciona espaçamento interno */
+    display: flex; /* centraliza verticalmente */
+    justify-content: space-between; /* distribui conteúdo horizontalmente */
+    align-items: center; /* alinha os elementos no centro */
+}
+
+header div {
+    display: flex; 
+    align-items: center; /* centraliza o contúdo verticalmente (utilizando o flex-box) */
+}
+
+header img {
+    max-width: 50px; /* define largura máxima */
+    margin-right: 16px; /* espaçamento externo à direita */
+    cursor: pointer; /* tipo de cursor do mouse */
+}
+
+header h1 {
+    font-size: 1.8em; /* define o tamanho da fonte */
+}
+
+input[type="search"] { /* <input> do tipo search */
+    padding: 8px; /* aploca espaçamento interno */
+    border: none;/* remove as bordas */
+    border-radius: 5px; /* arredonda os cantos */
+    margin-right: 16px; /* adiciona espaçamento externo à direita */
+}
+
+main {
+    flex: 1; /* ocupa totalmente a área disponível */
+    display: flex; /* transforma em um conteiner flexível */
+    background-color: #fff; /* define a cor de fundo */
+}
+
+label {
+    display: block; /* Exibe o elemento em bloco */
+    margin-bottom: 5px; /* Adiciona espaçamento externo inferior */
+    font-weight: bold; /* Aplica formato negrito na fonte */
+}
+
+input [type="text"], /* aplicando estilo para a tag <input> do tipo text */
+input [type="email"], /* aplicando estilo para a tag <input> do tipo email */
+input [type="password"] { /* aplicando estilo para a tag <input> do tipo password */
+    padding: 8px; /* define espaçamento interno */
+    border: 1px solid #ccc; /* aplica uma borda */
+    border-radius: 5px; /* aplica arredondamento nas bordas */
+    font-size: 1em; /* tamanho da fonte */
+    background-color: #f9f9f9; /* cor do fundo */
+    margin-bottom: 8px; /* adiciona espaçamento externo na parte inferior */
+    width: 100%; /* ocupa a largura total total da área */
+}
+
+input[type="submit"] { /* aplica estilo para a tag <input> do tipo submit */
+    padding: 8px 16px; /* aplica espaçamento interno */
+    background-color: #4CAF50; /* define cor de fundo */
+    color: white; /* define cor do texto */
+    border: none; /* remove a borda */
+    border-radius: 5px; /* define arredondamento nas bordas */
+    font-size: 1.1em; /* define tamanho da fonte */
+    cursor: pointer; /* define o tipo do cursor do mouse quando estiver por cima do submit */
+    margin-bottom: 8px; /* adiciona espaçamento externo na parte inferior */
+}
+
+nav {
+    flex: 1; /* Ocupa um tamanho flexível na página */
+    background-color: #fff; /* define cor do fundo */
+    border-right: 2px solid #ccc; /* adiciona borda na direita e uma cor */
+    padding: 8px; /* define espaçamento interno */
+}
+
+nav ul { /* adiciona um estilo para a <ul> dentro de <nav> */
+    list-style: none; /* remove o marcador da lista não ordenada */
+}
+
+nav ul li {
+    margin-bottom: 16px; /* adiciona um espaçamento inferior na parte final */
+}
+
+nav ul li a {
+    text-decoration: none; /* remove a decoração do texto com link */
+    color: #333; /* define a cor do texto */
+    font-weight: bold; /* aplica negrito a fonte */
+    display: block; /* exibe o conteúdo em bloco */
+    padding: 8px; /* adiciona espaçamento interno */
+    border-radius: 5px; /* define arredondamento a borda */
+    transition: background-color 0.3s ease; /* cria uma transição para a cor de fundo */
+}
+
+nav ul li a:hover { /* define o estilo para o evento hover */
+    background-color: #4CAF50; /* define cor do fundo */
+    color: white; /* define cor do texto */
+}
+
+section {
+    flex: 4; /* faz com que o container flexível ocupe a área toda disponível */
+    display: flex; /* faz com que o container seja flexível */
+    flex-direction: column; /* distribui os elementos filhos em uma coluna */
+    padding: 8px 8px 8px 16px; /* cria um espaçamento interno */
+}
+
+section h2 {
+    margin-bottom: 16px; /* adiciona um espaçamento inferior */
+    font-size: 1.5em; /* define tamanho da fonte */
+    border-bottom: 2px solid #4CAF50; /* define tamanho e cor da borda */
+    padding-bottom: 16px; /* define espaçameento interno inferior */
+}
+
+section form {
+    max-width: 368px; /* define a largula máxima */
+}
+
+article {
+    padding: 16px; /* adiciona espaçamento interno */
+    border: 1px solid #ccc; /* define tamanho e cor da borda */
+    border-radius: 8px; /* define arredondamento na ponta da borda */
+}
+
+footer {
+    text-align: center; /* define alinhamento do texto */
+    margin-top: 8px; /* adiciona margem externa superior */
+    margin-bottom: 8px; /* adiciona margem externa inferior */
+    font-size: 0.9em; /* define tamanho da fonte */
+    color: #666; /* define cor do texto */
+}
+
+.login-container {
+    max-width: 400px; /* define a largura máxima */
+    margin: 48px auto; /*  define tamanho da margem */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* aplica sombra na borda */
+    border-radius: 8px; /* define o arredondamento nas bordas */
+    flex-direction: column; /* distrubui os elementos em uma coluna */
+    align-items: stretch; /* alinha de forma organizada dentro da flex box */
+    padding: 16px; /* define espaçamento interno */
+    justify-content: center; /* ajusta os elementos para o centro do container */
+    width: 100%; /* define a largura para alcançae 100% do container */
+}
+
+.login-container img {
+    max-width: 100px; /* define a largura máxima */
+    margin: 0 auto; /* define o tamanho da margem */
+}
+
+.login-container h1 {
+    margin-bottom: 20px; /* define o tamanho da margem inferior da borda */
+    text-align: center; /* alinha o texto para o centro */
+    color: #4CAF50; /* define a cor do texto */
+}
+
+.login-container input[type="submit"] {
+    width: 100%; /* define a largura para alcançar todo o containter |---| */
+}
+
+.login-container a {
+    display: block; /* distribui os elementos horizontalmente no centro da div */
+    margin-top: 8px; /* define o tamano da margem de cima */
+    font-size: 0.9em; /* define o tamanho da fonte */
+    color: #4CAF50; /* define a cor da fonte */
+    text-decoration: none; /* define a decoração do texto para nenhuma */
+}
+
+.card-grid {
+    display: grid; /* distribui os elemtentos em vertical dentro da div */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /*  */
+    gap: 16px;
+}
+
+@media (max-width: 768px) { /* Regra de estilo condicionapara uma tela com o tamanho máximo de 768px. */
+    
+    body { 
+        height: 100%; /* define a altura */
+        overflow: auto; /* aplica a barra de rolagem atomaticamente */
+    }
+
+    header {
+        flex-direction: column; /* distribui os elementos filhos em coluna  */
+        text-align: center; /* centraliza os textos */
+    }
+    
+    main {
+        flex-direction: column; /* distribui os elementos filhos em coluna */
+    }
+    
+    nav {
+        border-bottom: 2px solid #ccc; /* adiciona borda inferior */
+    }
+    
+    .card-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* distribui as colunas no grid condicionado a uma largura específica */
+    }
+    
+}
+/*  */
